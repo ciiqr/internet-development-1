@@ -1,0 +1,270 @@
+/*
+ * Name:		William Villeneuve
+ * Filename:	intn2201.css
+ * Date:		January 29, 2014
+ * Purpose:		The purpose of this .css file is to style and layout the pages
+ *					of my website in an easy and easily changed way for
+ *					the INTN 2201 Course at Durham College.
+*/
+
+/* INTN 2201 */
+
+/*
+The layout for the rest of this css is a modified version from:
+http://www.maxdesign.com.au/articles/process/
+
+Students are encouraged to read this article.  Great explanation of some sound design concepts with attractive examples provided.
+
+You can cut and paste this at the bottom of your existing css file, and when used in conjunction with the css_layout.html file you unzipped, can wrap your pages into this site.
+*/
+#container
+{
+	margin: 0 auto;
+	width: 1200px;
+	background: #FFF;
+}
+
+#header
+{
+	background: #324152;
+	padding: 20px;
+}
+
+#header h1
+{ 
+	margin: 0;
+	display: inline;
+	padding-left: 20px;
+}
+#header img
+{ 
+	vertical-align: middle;
+	width: 150px;
+}
+
+#sites
+{
+	float: left;
+	width: 1200px;
+	background: #333;
+}
+
+#sites ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+#sites ul li
+{
+	list-style-type: none;
+	display: inline;
+}
+
+#sites li a
+{
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	color: #DEA677;
+	text-decoration: none;
+	border-right: 1px solid #DEA677;
+}
+
+#sites li a:hover { 
+	background-color: #324152; 
+	color: #FFF;
+}
+
+#navigation
+{
+	clear: left;
+	float: left;
+	width: 240px;
+	padding: 10px 0;
+	margin: 0 20px 0 0;
+	display: inline;
+}
+
+#navigation h3 {
+	margin: 0;
+	padding-left: 20px;
+}
+
+#content-container
+{
+	float: left;
+	width: 1200px;
+	background-color: #47535E;
+	background-image: url(../images/styles/background.png);
+	/* go up a directory, and then work down into images/styles directory */
+	background-repeat: repeat-y;
+	
+}
+
+#content
+{
+	float: right;
+	width: 860px;
+	padding: 20px 0;
+	padding-right: 20px;
+	margin: 0 0 0 30px;
+	display: inline;
+}
+
+#content h2 { margin: 0; }
+
+
+#footer
+{
+	clear: both;
+	background: #324152;
+	text-align: right;
+	padding: 20px;
+	height: 1%;
+}
+#footer img {
+	
+	vertical-align: middle;
+}
+
+
+
+
+
+/* My Styles */
+/*************/
+
+body {
+	background-color: #324152;
+	color: #DEA677;
+	font-family: Arial, sans-serif;
+}
+
+/* Quotes around paragraphs
+   - Really was Only cause I could but, it looks really bad.
+*/
+/*p:before {
+	content: open-quote;
+	font-size: 24pt;
+}
+p:after {
+	content: close-quote;
+	font-size: 24pt;
+}*/
+
+/*Don't have quotes in footer*/
+p.footer:after {
+
+	content: none;
+}
+p.footer:before {
+
+	content: none;
+}
+
+/* Style of links */
+a:link {
+	text-decoration: none;
+	color: #C1836A;
+}
+a:visited {
+
+	color: #000000;/*796466*/
+}
+a:active {
+
+	text-decoration: overline;
+}
+a:hover {
+
+	text-decoration: underline;
+}
+
+/*Navbar Current Page*/
+a.active {
+	/*font-weight: bold;*/
+	text-decoration: underline;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+
+	font-family: Helvetica, sans-serif;
+}
+h1 {
+
+	text-decoration: underline;
+}
+
+/* Horizontal Rule/Line */
+hr {
+	border-color: #796466;
+
+	/* The Following Does Not Work On The Open-Tech Server */
+
+    /*height: 3em;*/
+    /*border: 0;*/
+    /*background-image: url(/images/divider.png);*/
+    /*background-size: 100%, auto;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right*/
+}
+
+
+/* Table Tags */
+table {
+
+	background-color: #324152;
+}
+
+/*Lab 2*/
+td.lunch {
+	background-color: #00FF66;
+	font-weight: bold;
+}
+td.course {
+
+	background-color: #666666;
+}
+
+caption {
+	font-style: italic;
+	font-size:  0.9em;
+}
+
+th {
+	background-color: #DEA677;
+	color: #324152;
+}
+
+ul {
+
+	list-style-type: square;
+}
+
+ol {
+	
+	list-style-type: upper-roman;
+}
+
+.center
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+/* Term Test 1 */
+span {
+	font-size: 36pt;
+	text-decoration: underline;
+	font-weight: bold;
+	font-family: Helvetica, Verdana;
+}
+
+cite {
+	font-size: 14pt;
+	font-style: italic;
+	font-family: Arial;
+}
