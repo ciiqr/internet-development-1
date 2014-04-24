@@ -6,3 +6,4 @@ These are my solutions to the Labs & Tests for the Internet Development I course
 * Validates to Strict XHTML
 * Additional (Non-Required) Features (Bonus Lab)
 * User Registration & Login     
+* Work done under stressful, time restricted conditions (Tests & Exam)
